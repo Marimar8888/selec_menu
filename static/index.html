@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <title>Menú del Restaurante Bottega</title>
+</head>
+<body>
+<div class="container">
+  <h1>Menú del Restaurante Bottega</h1>
+
+  <div class="menu-section">
+    <h2>Desayuno</h2>
+    <div class="dish">
+        <h3>Plato Principal</h3>
+        <form>
+            <input type="radio" id="desayuno_principal1" name="desayuno_principal" value="Café con leche" data-price="3"> 
+            <label for="desayuno_principal1">Cafe Con Leche</label><br>
+            
+            <input type="radio" id="desayuno_principal2" name="desayuno_principal" value="Infusión" data-price="2"> 
+            <label for="desayuno_principal2">Infusión</label><br>
+        </form>
+    </div>
+
+    <div class="dish">
+        <h3>Acompañamientos</h3>
+        <h4>(Máximo dos)</h4>
+        <form>
+            <input type="checkbox" id="desayuno_acompanamiento1" name="desayuno_acompanamiento" value="Huevos Revueltos" data-price="4">
+            <label for="desayuno_acompanamiento1">Huevos Revueltos</label><br>
+            
+            <input type="checkbox" id="desayuno_acompanamiento2" name="desayuno_acompanamiento" value="Fruta" data-price="3">
+            <label for="desayuno_acompanamiento2">Fruta</label><br>
+            
+            <input type="checkbox" id="desayuno_acompanamiento3" name="desayuno_acompanamiento" value="Yogur" data-price="2">
+            <label for="desayuno_acompanamiento3">Yogur</label><br>
+        </form>
+    </div>
+    <div class="confirmButton">
+        <button id="confirmButton">Confirmar Pedido</button>
+    </div>
+  </div>
+
+  <div class="menu-section">
+    <h2>Comida</h2>
+    <div class="dish">
+        <h3>Plato Principal</h3>
+        <form>
+            <input type="radio" id="comida_principal1" name="comida_principal" value="Pollo" data-price="8"> 
+            <label for="comida_principal1">Pollo</label><br>
+            
+            <input type="radio" id="comida_principal2" name="comida_principal" value="Pescado" data-price="10"> 
+            <label for="comida_principal2">Pescado</label><br>
+        </form>
+    </div>
+
+    <div class="dish">
+        <h3>Acompañamientos</h3>
+        <h4>(Máximo dos)</h4>
+        <form>
+            <input type="checkbox" id="comida_acompanamiento1" name="comida_acompanamiento" value="Patatas Fritas" data-price="4">
+            <label for="comida_acompanamiento1">Patatas Fritas</label><br>
+            
+            <input type="checkbox" id="comida_acompanamiento2" name="comida_acompanamiento" value="Puré de patatas" data-price="4">
+            <label for="comida_acompanamiento2">Puré de patatas</label><br>
+            
+            <input type="checkbox" id="comida_acompanamiento3" name="comida_acompanamiento" value="Ensalada Verde" data-price="5">
+            <label for="comida_acompanamiento3">Ensalada verde</label><br>
+        </form>
+    </div>
+    <div class="confirmButton">
+        <button id="confirmButton">Confirmar Pedido</button>
+    </div>
+  </div>
+ 
+  <div class="menu-section">
+    <h2>Cena</h2>
+    <div class="dish">
+        <h3>Plato Principal</h3>
+        <form>
+            <input type="radio" id="cena_principal1" name="cena_principal" value="Pollo" data-price="9"> 
+            <label for="cena_principal1">Pollo</label><br>
+            
+            <input type="radio" id="cena_principal2" name="cena_principal" value="Pescado" data-price="11"> 
+            <label for="cena_principal2">Pescado</label><br>
+        </form>
+    </div>
+
+    <div class="dish">
+        <h3>Acompañamientos</h3>
+        <h4>(Máximo dos)</h4>
+        <form>
+            <input type="checkbox" id="cena_acompanamiento1" name="cena_acompanamiento" value="Patatas Fritas" data-price="2">
+            <label for="cena_acompanamiento1">Patatas Fritas</label><br>
+            
+            <input type="checkbox" id="cena_acompanamiento2" name="cena_acompanamiento" value="Pure de Patatas" data-price="3">
+            <label for="cena_acompanamiento2">Puré de patatas</label><br>
+            
+            <input type="checkbox" id="cena_acompanamiento3" name="cena_acompanamiento" value="Ensalada Verde" data-price="4">
+            <label for="cena_acompanamiento3">Ensalada verde</label><br>
+        </form>
+    </div>
+    <div class="confirmButton">
+        <button id="confirmButton">Confirmar Pedido</button>
+    </div>
+  </div>
+</div>
+</body>
+</html>
