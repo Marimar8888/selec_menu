@@ -12,8 +12,9 @@
 <div class="container">
   <h1>Menú del Restaurante Bottega</h1>
 
-  <div class="menu-section">
-    <h2>Desayuno</h2>
+  <div class="menu-section" id="desayuno">
+    <h2> Desayuno  </h2>
+    <span class="menu-toggle" onclick="toggleMenus('desayuno')">Seleccionar</span>
     <div class="dish">
         <h3>Plato Principal</h3>
         <form>
@@ -44,8 +45,9 @@
     </div>
   </div>
 
-  <div class="menu-section">
+  <div class="menu-section" id="comida">
     <h2>Comida</h2>
+    <span class="menu-toggle" onclick="toggleMenus('comida')">Seleccionar</span>
     <div class="dish">
         <h3>Plato Principal</h3>
         <form>
@@ -76,8 +78,9 @@
     </div>
   </div>
  
-  <div class="menu-section">
+  <div class="menu-section" id="cena">
     <h2>Cena</h2>
+    <span class="menu-toggle" onclick="toggleMenus('cena')">Seleccionar</span>
     <div class="dish">
         <h3>Plato Principal</h3>
         <form>
@@ -108,5 +111,46 @@
     </div>
   </div>
 </div>
+<script>
+let menusActivos = {
+    desayuno: false,
+    comida: false,
+    cena: false
+};
+
+function limpiarMenu(menuId) {
+    const menuSection = document.getElementById(menuId);
+    const inputs = menuSection.querySelectorAll('input[type="radio"], input[type="checkbox"]');
+    inputs.forEach(function(input) {
+        input.checked = false;
+    });
+}
+
+function toggleMenus(menuId) {
+    if (menusActivos[menuId]) {
+        return;
+    }
+
+    for (const key in menusActivos) {
+        if (menusActivos.hasOwnProperty(key) && menusActivos[key]) {
+            const menuActivo = document.getElementById(key);
+            const inputsMenuActivo = menuActivo.querySelectorAll('input[type="radio"], input[type="checkbox"]');
+            inputsMenuActivo.forEach(function(input) {
+                input.disabled = true;
+            });
+            menusActivos[key] = false; 
+            limpiarMenu(key); 
+        }
+    }
+
+    const menuSection = document.getElementById(menuId);
+    const inputs = menuSection.querySelectorAll('input[type="radio"], input[type="checkbox"]');
+    inputs.forEach(function(input) {
+        input.disabled = !input.disabled;
+    });
+    menusActivos[menuId] = true; 
+}
+
+</script>
 </body>
 </html>

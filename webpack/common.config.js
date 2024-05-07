@@ -5,7 +5,8 @@ module.exports = {
 
   entry: {
     app: [
-      './src/bootstrap.js'
+      './src/bootstrap.js',
+      './src/control_active.js'
     ],
     vendor: './src/vendor.js'
   },

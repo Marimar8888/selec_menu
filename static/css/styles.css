@@ -72,3 +72,9 @@ div .confirmButton button {
     margin-top: 20px;
     font-weight: 700;
 }
+
+.menu-toggle {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+  }
