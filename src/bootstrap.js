@@ -48,8 +48,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 if(selectedCheckboxes.length ===2 ) {
                     var mensaje = selectedValor + " excelente elección!. " + " Su precio es " + selectedPrecio.toFixed(2) + "€." + "Tiene que elegir otro acompañamiento.";
                     alert(mensaje);
-                    var mensaje = "El total de su pedido es de: " + total.toFixed(2) + "€.";
-                    alert(mensaje);
+                   // var mensaje = "El total de su pedido es de: " + total.toFixed(2) + "€.";
+                    //alert(mensaje);
                 }
             } else {
                 total -= precio;
